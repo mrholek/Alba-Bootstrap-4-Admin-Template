@@ -55,11 +55,6 @@ $navbar-brand-border: (
         size:                       1px,
         style:                      solid,
         color:                      darken($brand-primary,5%)
-    ),
-    right: (
-        size:                       1px,
-        style:                      solid,
-        color:                      darken($brand-primary,5%)
     )
 );
 
@@ -90,7 +85,7 @@ $mobile-sidebar-width:              200px;
 // Sidebar Navigation
 
 $sidebar-nav-color:                 #fff;
-$sidebar-nav-title-padding-y:       .75rem;
+$sidebar-nav-title-padding-y:       .9rem;
 $sidebar-nav-title-padding-x:       1rem;
 $sidebar-nav-title-color:           $gray-light;
 $sidebar-nav-link-padding-y:        .75rem;

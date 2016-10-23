@@ -6,7 +6,8 @@
             <button class="btn btn-danger" (click)="showError()">Try Error</button>
             <button class="btn btn-warning" (click)="showWarning()">Try Warning</button>
             <button class="btn btn-info" (click)="showInfo()">Try Info</button>
-            <button class="btn btn-default" (click)="showCustom()">Try Custom</button>
+            <button class="btn btn-primary" (click)="showPrimary()">Try Primary</button>
         </div>
     </div>
 </div>
+<toaster-container [toasterconfig]="toasterconfig"></toaster-container>

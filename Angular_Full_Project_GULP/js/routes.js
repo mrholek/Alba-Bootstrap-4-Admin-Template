@@ -105,7 +105,21 @@ angular
             })
             .state('appSimple', {
                 abstract: true,
-                templateUrl: 'views/common/layouts/simple.html'
+                templateUrl: 'views/common/layouts/simple.html',
+                resolve: {
+                    loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
+                        // you can lazy load CSS files
+                        return $ocLazyLoad.load([{
+                            serie: true,
+                            name: 'Font Awesome',
+                            files: ['css/font-awesome.min.css']
+                        },{
+                            serie: true,
+                            name: 'Simple Line Icons',
+                            files: ['css/simple-line-icons.css']
+                        }]);
+                    }],
+                }
             })
 
             // Additional Pages

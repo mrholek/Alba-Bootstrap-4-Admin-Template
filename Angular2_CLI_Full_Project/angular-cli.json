@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.5.0",
+    "version": "1.5.9",
     "name": "GenesisUI"
   },
   "apps": [
@@ -14,11 +14,12 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "styles": [],
+      "styles": [
+        "scss/style.scss"
+      ],
       "scripts": [
         "../node_modules/chart.js/dist/Chart.bundle.min.js",
-        "../node_modules/chart.js/dist/Chart.min.js",
-        "../node_modules/ng2-toastr/bundles/ng2-toastr.min.js"
+        "../node_modules/chart.js/dist/Chart.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
@@ -40,7 +41,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false
   }
 }
