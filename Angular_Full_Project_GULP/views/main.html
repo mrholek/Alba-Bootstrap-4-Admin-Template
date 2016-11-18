@@ -1,0 +1,547 @@
+<div class="animated fadeIn">
+
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                    <div class="h4 m-0">89.9%</div>
+                    <div class="pb-h">Lorem ipsum...</div>
+                    <progress class="progress progress-xs progress-success mb-h" value="25" max="100">25%</progress>
+                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+        <div class="col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                    <div class="h4 m-0">12.124</div>
+                    <div class="pb-h">Lorem ipsum...</div>
+                    <progress class="progress progress-xs progress-info mb-h" value="25" max="100">25%</progress>
+                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+        <div class="col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                    <div class="h4 m-0">$98.111,00</div>
+                    <div class="pb-h">Lorem ipsum...</div>
+                    <progress class="progress progress-xs progress-warning mb-h" value="25" max="100">25%</progress>
+                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+        <div class="col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                    <div class="h4 m-0">2 TB</div>
+                    <div class="pb-h">Lorem ipsum...</div>
+                    <progress class="progress progress-xs progress-danger mb-h" value="25" max="100">25%</progress>
+                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                </div>
+            </div>
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card" ng-controller="mainChartCtrl">
+                <div class="card-header">
+                    Traffic
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-9 px-2">
+                            <div class="chart-wrapper" style="height:370px">
+                                <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-series="series" chart-click="onClick" chart-options="options" chart-colors="colors"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div>Visits
+                                <span class="font-weight-bold pull-right">(40% - 29.703 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Unique
+                                <span class="font-weight-bold pull-right">(20% - 24.093 Unique Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+
+                            <div>Pageviews
+                                <span class="font-weight-bold pull-right">(60% - 78.706 Views)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-warning mt-h" value="60" max="100">60%</progress>
+
+                            <div>New Users
+                                <span class="font-weight-bold pull-right">(80% - 22.123 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-danger mt-h" value="80" max="100">80%</progress>
+
+                            <div>Bounce Rate
+                                <span class="font-weight-bold pull-right">(40.15%)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Visits
+                                <span class="font-weight-bold pull-right">(40% - 29.703 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Unique
+                                <span class="font-weight-bold pull-right">(20% - 24.093 Unique Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.card-->
+        </div>
+    </div>
+
+    <div class="row" ng-controller="socialBoxCtrl">
+        <div class="col-md-3 col-sm-6">
+            <div class="social-box facebook">
+                <i class="fa fa-facebook"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data1" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" width="auto" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>89k</strong>
+                        <span>friends</span>
+                    </li>
+                    <li>
+                        <strong>459</strong>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-md-3 col-sm-6">
+            <div class="social-box twitter">
+                <i class="fa fa-twitter"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data2" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" width="auto" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>973k</strong>
+                        <span>followers</span>
+                    </li>
+                    <li>
+                        <strong>1.792</strong>
+                        <span>tweets</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-md-3 col-sm-6">
+
+            <div class="social-box linkedin">
+                <i class="fa fa-linkedin"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" width="auto" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>500+</strong>
+                        <span>contacts</span>
+                    </li>
+                    <li>
+                        <strong>292</strong>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-md-3 col-sm-6">
+            <div class="social-box google-plus">
+                <i class="fa fa-google-plus"></i>
+                <div class="chart-wrapper">
+                    <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="colors" width="auto" height="90"></canvas>
+                </div>
+                <ul>
+                    <li>
+                        <strong>894</strong>
+                        <span>followers</span>
+                    </li>
+                    <li>
+                        <strong>92</strong>
+                        <span>circles</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/.social-box-->
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="card-title clearfix mb-0">Traffic &amp; Sales</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-outline-primary pull-right ml-1"><i class="icon-cloud-download"></i> &nbsp; Download</button>
+                            <fieldset class="form-group pull-right" ng-controller="dateRangeCtrl">
+                                <div class="input-group pull-right" style="width:240px;">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                                    </span>
+                                    <input date-range-picker class="form-control date-picker" type="text" ng-model="date" options="opts" />
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <hr class="m-0">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="callout callout-info">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="primary" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-xs-6">
+                                    <div class="callout callout-danger">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="danger" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="mt-0">
+                            <ul class="horizontal-bars" ng-controller="horizontalBarsCtrl">
+                                <li ng-repeat="row in data">
+                                    <div class="title">
+                                        {{ row.day }}
+                                    </div>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-info" value="{{ row.new }}" max="100" style="margin-bottom: 2px;">{{ row.new }}%</progress>
+                                        <progress class="progress progress-xs progress-danger m-0" value="{{ row.recurring }}" max="100">{{ row.recurring }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="legend">
+                                    <span class="tag tag-pill tag-info"></span>
+                                    <small>New clients</small>&nbsp;
+                                    <span class="tag tag-pill tag-danger"></span>
+                                    <small>Recurring clients</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="callout callout-warning">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="warning" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-xs-6">
+                                    <div class="callout callout-success">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="success" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="mt-0">
+                            <ul class="horizontal-bars type-2" ng-controller="horizontalBarsType2Ctrl">
+                                <li ng-repeat="row in gender">
+                                    <i ng-class="row.icon"></i>
+                                    <span class="title">{{ row.title }}</span>
+                                    <span class="value">{{ row.value }}%</span>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-warning m-0" value="{{ row.value }}" max="100">{{ row.value }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li ng-repeat="row in source">
+                                    <i ng-class="row.icon"></i>
+                                    <span class="title">{{ row.title }}</span>
+                                    <span class="value">{{ row.value | number }}
+                                        <span class="text-muted small">({{ row.percent }}%)</span>
+                                    </span>
+                                    <div class="bars">
+                                        <progress class="progress progress-xs progress-success m-0" value="{{ row.percent }}" max="100">{{ row.percent }}%</progress>
+                                    </div>
+                                </li>
+                                <li class="divider text-xs-center">
+                                    <button class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="callout">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data4" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="default" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-xs-6">
+                                    <div class="callout callout-primary">
+                                        <small class="text-muted">New Clients</small>
+                                        <br>
+                                        <strong class="h4">9,123</strong>
+                                        <div class="chart-wrapper" ng-controller="sparklineChartCtrl">
+                                            <canvas class="chart chart-line" chart-data="data3" chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options" chart-colors="primary" width="100" height="30"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                            <hr class="mt-0">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-user bg-primary"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-info"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-warning"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-danger"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-success"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-danger"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-user bg-warning"></i>
+                                    <div class="desc">
+                                        <div class="title">Lorem ipsum</div>
+                                        <small>Lorem ipsum dolor sit amet</small>
+                                    </div>
+                                    <div class="value">
+                                        <div class="small text-muted">adsadas</div>
+                                        <strong>1924</strong>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="divider text-xs-center">
+                                    <button class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-->
+                    </div>
+                    <!--/.row-->
+                    <br/>
+                    <table class="table table-hover table-outline mb-0">
+                        <thead class="thead-default">
+                            <tr>
+                                <th class="text-xs-center"><i class="icon-people"></i>
+                                </th>
+                                <th>User</th>
+                                <th class="text-xs-center">Country</th>
+                                <th>Usage</th>
+                                <th class="text-xs-center">Payment Method</th>
+                                <th>Activity</th>
+                                <th class="text-xs-center">Satisfaction</th>
+                                <th class="text-xs-center"><i class="icon-settings"></i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody ng-controller="usersTableCtrl">
+                            <tr ng-repeat="user in users">
+                                <td class="text-xs-center">
+                                    <div class="avatar">
+                                        <img ng-src="img/avatars/{{ user.avatar }}" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status" ng-class="{ 'label-success' : user.status == 'active',
+                                                                                'label-warning' : user.status == 'away',
+                                                                                'label-danger'  : user.status == 'busy',
+                                                                                'label-default' : user.status == 'offline' }"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>{{ user.name }}</div>
+                                    <div class="small text-muted">
+                                        <span ng-if="user.new == true">New</span>
+                                        <span ng-if="user.new == false">Recurring</span>
+                                        | Registered: {{ user.registered }}</div>
+                                </td>
+                                <td class="text-xs-center">
+                                    <img ng-src="img/flags/{{ user.flag }}" alt="{{ user.country }}" style="height:24px;">
+                                </td>
+                                <td>
+                                    <div class="clearfix">
+                                        <div class="pull-left">
+                                            <strong>{{ user.usage }}%</strong>
+                                        </div>
+                                        <div class="pull-right">
+                                            <small class="text-muted">{{ user.period }}</small>
+                                        </div>
+                                    </div>
+                                    <progress class="progress progress-xs" ng-class="{ 'progress-info'    : user.usage <= 25,
+                                                          'progress-success' : user.usage > 25 && user.usage <= 50,
+                                                          'progress-warning' : user.usage > 50 && user.usage <= 75,
+                                                          'progress-danger'  : user.usage > 75 && user.usage <= 100 }" value="{{ user.usage }}" max="100" style="margin:5px 0 0 0;">{{ user.usage }}%</progress>
+                                </td>
+                                <td class="text-xs-center">
+                                    <i class="fa" ng-class="{ 'fa-cc-mastercard' : user.payment == 'mastercard',
+                                                   'fa-cc-visa' : user.payment == 'visa',
+                                                   'fa-cc-amex' : user.payment == 'amex',
+                                                   'fa-cc-diners-club' : user.payment == 'diners',
+                                                   'fa-cc-stripe' : user.payment == 'stripe',
+                                                   'fa-paypal' : user.payment == 'paypal',
+                                                   'fa-google-wallet' : user.payment == 'google' }" style="font-size:24px"></i>
+                                </td>
+                                <td>
+                                    <div class="small text-muted">Last login</div>
+                                    <strong>{{ user.activity }}</strong>
+                                </td>
+                                <td class="text-xs-center">
+                                    <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
+                                        <canvas gaugejs ng-model="gauge" gauge-type="gauge.gaugeType" options="gauge.options" value="user.satisfaction" max-value="100" animation-time="gauge.animationTime" width="34" height="34"></canvas>
+                                        <span class="value">{{ user.satisfaction }}%</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs-center">
+                                    <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+
+</div>
+
+<div ng-controller="toastrWelcome"></div>
