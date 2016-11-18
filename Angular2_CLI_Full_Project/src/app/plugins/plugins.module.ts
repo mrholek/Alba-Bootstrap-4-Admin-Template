@@ -2,7 +2,7 @@ import { NgModule }                 from '@angular/core';
 import { CommonModule }             from '@angular/common';
 
 // Calendar
-import { CalendarModule }           from 'angular2-calendar';
+import { CalendarModule }           from 'angular-calendar';
 
 import { CalendarComponent }        from './calendar.component';
 

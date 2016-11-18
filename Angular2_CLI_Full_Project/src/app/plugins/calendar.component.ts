@@ -12,7 +12,7 @@ import { startOfDay,
          subMonths }        from 'date-fns';
 
 import { CalendarEvent,
-         CalendarEventAction } from 'angular2-calendar'; // import should be from `angular2-calendar` in your app
+         CalendarEventAction } from 'angular-calendar'; // import should be from `angular-calendar` in your app
 
 
 const colors: any = {

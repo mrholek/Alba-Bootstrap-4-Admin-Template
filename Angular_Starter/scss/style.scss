@@ -1,14 +1,14 @@
 /**
  * GenesisUI - Bootstrap 4 Admin Template
- * @version v1.5.9
+ * @version v1.5.10
  * @link https://genesisui.com
  * Copyright (c) 2016 creativeLabs Łukasz Holeczek
  * @license Commercial
  */
 // Core variables and mixins
-@import "core/bootstrap-variables";
+@import "bootstrap-variables";
 @import "bootstrap_src/variables";
-@import "core/custom-variables";
+@import "custom-variables";
 @import "bootstrap_src/mixins";
 @import "core/mixins";
 
@@ -61,7 +61,7 @@
 @import "bootstrap_src/modal";
 @import "bootstrap_src/tooltip";
 @import "bootstrap_src/popover";
-//@import "carousel";
+@import "bootstrap_src/carousel";
 
 // Utility classes
 @import "bootstrap_src/utilities";
@@ -99,8 +99,8 @@
 // Mobile View
 @import "core/mobile";
 
+// Custom styles
+@import "custom";
+
 // UI Kits
 @import "uikits/uikits";
-
-// Custom styles
-@import "core/custom";
