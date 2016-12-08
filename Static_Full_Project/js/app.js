@@ -28,6 +28,8 @@
 
 $(document).ready(function($){
 
+	smartResize();
+
 	// Add class .active to current link
 	$.navigation.find('a').each(function(){
 
@@ -55,6 +57,7 @@ $(document).ready(function($){
 
         if ($(this).hasClass('nav-dropdown-toggle')) {
 			$(this).parent().toggleClass('open');
+			resizeBroadcast();
 		}
 
 	});
@@ -147,4 +150,18 @@ function init(url) {
 	/* ---------- Popover ---------- */
 	$('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
+}
+
+$(window).bind('resize', smartResize);
+
+function smartResize(e) {
+	// console.log("smartResize");
+
+	var documentHeight = $(document).height()
+	var bodyHeight = $('body').height();
+	var sidebarHeight = $('.sidebar').height();
+
+	if (documentHeight > bodyHeight) {
+		$('body').css('min-height', documentHeight);
+	}
 }
