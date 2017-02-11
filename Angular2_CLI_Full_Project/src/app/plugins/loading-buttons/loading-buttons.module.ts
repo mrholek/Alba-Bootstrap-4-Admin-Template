@@ -1,22 +1,22 @@
-import { NgModule }                     from '@angular/core';
-import { CommonModule }                 from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 // Loading Buttons
-import { LaddaModule }                  from 'angular2-ladda';
+import { LaddaModule } from 'angular2-ladda';
 
-import { LoadingButtonsComponent }      from './loading-buttons.component';
+import { LoadingButtonsComponent } from './loading-buttons.component';
 
 // Routing
-import { LoadingButtonsRoutingModule }  from './loading-buttons-routing.module';
+import { LoadingButtonsRoutingModule } from './loading-buttons-routing.module';
 
 @NgModule({
-    imports: [
-        LoadingButtonsRoutingModule,
-        CommonModule,
-        LaddaModule
-    ],
-    declarations: [
-        LoadingButtonsComponent
-    ]
+  imports: [
+    LoadingButtonsRoutingModule,
+    CommonModule,
+    LaddaModule
+  ],
+  declarations: [
+    LoadingButtonsComponent
+  ]
 })
 export class LoadingButtonsModule { }
