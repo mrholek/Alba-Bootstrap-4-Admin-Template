@@ -8,7 +8,7 @@ Alba is meant to be the UX game changer. Pure & transparent code is devoid of re
 
 <img src="https://genesisui.com/img/macbook-alba-bs4.png" alt="Bootstrap 4 Admin Template">
 
-Demo: <a href="https://genesisui.com/new_theme.html?id=alba">Alba Bootstrap 4 Admin Template</a>
+Demo: <a href="https://genesisui.com/bootstrap-admin-template.html?id=alba">Alba Bootstrap 4 Admin Template</a>
 
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
