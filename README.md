@@ -34,4 +34,4 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/mr
 
 ## Copyright and license
 
-Copyright (c) 2016 creativeLabs Łukasz Holeczek. If you want to use this template in your personal or commercial project you have to buy proper license. You can buy license on our website: https://genesisui.com/new_theme.html?id=alba
+Copyright (c) 2017 creativeLabs Łukasz Holeczek. If you want to use this template in your personal or commercial project you have to buy proper license. You can buy license on our website: https://genesisui.com/bootstrap-admin-template.html?id=alba
